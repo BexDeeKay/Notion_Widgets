@@ -1,242 +1,425 @@
 <body>
-<html>
- <head>
-    <style>
-    {
-        box-sizing: border-box;
-    }
-    .column {
-    float: left;
-    width: 50%;
-    }
+  <html>
+    <head>
+      <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="grid grid-cols-2 gap-10 p-10">
+      <div>
+        <section>
+          <p class="text-xl font-bold mb-4">Checklist</p>
 
-    
-    .column {
-    float: right;
-    width: 50%;
-    }
+          <div class="grid grid-cols-2">
+            <label
+              for="status"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Background:</label
+            >
+            <select
+              id="status"
+              name="status"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
 
-    .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-    </style>
- </head>
-<body>
- <div class="row">
- <div class="column" style="background-color:#FFFFFF;">
- <font size="6">Checklist</font><p><p> 
- <body>
-   <div class="column" style="background-color:#FFFFFF;">
-     <label for="Checklist">Background:</label>
-     <select name="" id="status">
-       <option value=""><style="background-color: #28456C;">Select status...</option>
-       <option value=""><style="background-color: #28456C;">Validated</option>
-       <option value=""><style="background-color: #6E3630;">Errors Found</option>
-       <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-       <option value=""><style="background-color: #854C1D;">Under Review</option>
-       <option value=""><style="background-color: #5A5A5A;">N/A</option>
-     </select>
-     <br>
-     <label for="Checklist">Name:</label>
-     <select name="" id="status">
-       <option value=""><style="background-color: #28456C;">Select status...</option>       
-       <option value=""><style="background-color: #28456C;">Validated</option>
-       <option value=""><style="background-color: #6E3630;">Errors Found</option>
-       <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-       <option value=""><style="background-color: #854C1D;">Under Review</option>
-       <option value=""><style="background-color: #5A5A5A;">N/A</option>
-     </select>
-     <br>
-     <label for="Checklist">Frame:</label>
-     <select name="" id="status">
-       <option value=""><style="background-color: #28456C;">Select status...</option> 
-       <option value=""><style="background-color: #28456C;">Validated</option>
-       <option value=""><style="background-color: #6E3630;">Errors Found</option>
-       <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-       <option value=""><style="background-color: #854C1D;">Under Review</option>
-       <option value=""><style="background-color: #5A5A5A;">N/A</option>
-     </select>
-         <br>
-     <label for="Checklist">Artwork:</label>
-     <select name="" id="status">
-       <option value=""><style="background-color: #28456C;">Select status...</option> 
-       <option value=""><style="background-color: #28456C;">Validated</option>
-       <option value=""><style="background-color: #6E3630;">Errors Found</option>
-       <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-       <option value=""><style="background-color: #854C1D;">Under Review</option>
-       <option value=""><style="background-color: #5A5A5A;">N/A</option>
-     </select>
-         <br>
-     <label for="Checklist">Cost:</label>
-     <select name="" id="status">
-       <option value=""><style="background-color: #28456C;">Select status...</option> 
-       <option value=""><style="background-color: #28456C;">Validated</option>
-       <option value=""><style="background-color: #6E3630;">Errors Found</option>
-       <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-       <option value=""><style="background-color: #854C1D;">Under Review</option>
-       <option value=""><style="background-color: #5A5A5A;">N/A</option>
-     </select>
-         <br>
-     <label for="Checklist">Effect Text:</label>
-     <select name="" id="status">
-       <option value=""><style="background-color: #28456C;">Select status...</option> 
-       <option value=""><style="background-color: #28456C;">Validated</option>
-       <option value=""><style="background-color: #6E3630;">Errors Found</option>
-       <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-       <option value=""><style="background-color: #854C1D;">Under Review</option>
-       <option value=""><style="background-color: #5A5A5A;">N/A</option>
-     </select>
-         <br>
-     <label for="Checklist">Set Stamp:</label>
-     <select name="" id="status">
-       <option value=""><style="background-color: #28456C;">Select status...</option> 
-       <option value=""><style="background-color: #28456C;">Validated</option>
-       <option value=""><style="background-color: #6E3630;">Errors Found</option>
-       <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-       <option value=""><style="background-color: #854C1D;">Under Review</option>
-       <option value=""><style="background-color: #5A5A5A;">N/A</option>
-     </select>
-         <br>
-     <label for="Checklist">Card Rarity:</label>
-     <select name="" id="status">
-       <option value=""><style="background-color: #28456C;">Select status...</option> 
-       <option value=""><style="background-color: #28456C;">Validated</option>
-       <option value=""><style="background-color: #6E3630;">Errors Found</option>
-       <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-       <option value=""><style="background-color: #854C1D;">Under Review</option>
-       <option value=""><style="background-color: #5A5A5A;">N/A</option>
-     </select>
-         <br>
-     <label for="Checklist">Subclasses:</label>
-     <select name="" id="status">
-       <option value=""><style="background-color: #28456C;">Select status...</option> 
-       <option value=""><style="background-color: #28456C;">Validated</option>
-       <option value=""><style="background-color: #6E3630;">Errors Found</option>
-       <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-       <option value=""><style="background-color: #854C1D;">Under Review</option>
-       <option value=""><style="background-color: #5A5A5A;">N/A</option>
-     </select>
-         <br>
-     <label for="Checklist">Artist Attribution:</label>
-     <select name="" id="status">
-       <option value=""><style="background-color: #28456C;">Select status...</option> 
-       <option value=""><style="background-color: #28456C;">Validated</option>
-       <option value=""><style="background-color: #6E3630;">Errors Found</option>
-       <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-       <option value=""><style="background-color: #854C1D;">Under Review</option>
-       <option value=""><style="background-color: #5A5A5A;">N/A</option>
-     </select>
-         <br>
-     <label for="Checklist">Card Number:</label>
-     <select name="" id="status">
-       <option value=""><style="background-color: #28456C;">Select status...</option> 
-       <option value=""><style="background-color: #28456C;">Validated</option>
-       <option value=""><style="background-color: #6E3630;">Errors Found</option>
-       <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-       <option value=""><style="background-color: #854C1D;">Under Review</option>
-       <option value=""><style="background-color: #5A5A5A;">N/A</option>
-     </select>
-         <br>
-     <label for="Checklist">Copyright Line:</label>
-     <select name="" id="status">
-       <option value=""><style="background-color: #28456C;">Select status...</option> 
-       <option value=""><style="background-color: #28456C;">Validated</option>
-       <option value=""><style="background-color: #6E3630;">Errors Found</option>
-       <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-       <option value=""><style="background-color: #854C1D;">Under Review</option>
-       <option value=""><style="background-color: #5A5A5A;">N/A</option>
-     </select>
-   </div>
-  <p> 
-  <div class="column" style="background-color:#FFFFFF;">        
-  <body>
-    <div class="column" style="background-color:#FFFFFF;">
-      <font size="5">Elestral</font><br>
-      <label for="Checklist">ATK Value:</label>
-      <select name="" id="status">
-        <option value=""><style="background-color: #28456C;">Select status...</option> 
-        <option value=""><style="background-color: #28456C;">Validated</option>
-        <option value=""><style="background-color: #6E3630;">Errors Found</option>
-        <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-        <option value=""><style="background-color: #854C1D;">Under Review</option>
-        <option value=""><style="background-color: #5A5A5A;">N/A</option>
-      </select>
-          <br>
-      <label for="Checklist">DEF Value:</label>
-      <select name="" id="status">
-        <option value=""><style="background-color: #28456C;">Select status...</option> 
-        <option value=""><style="background-color: #28456C;">Validated</option>
-        <option value=""><style="background-color: #6E3630;">Errors Found</option>
-        <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-        <option value=""><style="background-color: #854C1D;">Under Review</option>
-        <option value=""><style="background-color: #5A5A5A;">N/A</option>
-      </select>
-      <p>
-      <p>
-      <font size="5">Rune</font><br>
-      <label for="Checklist">Rune Icon:</label>
-      <select name="" id="status">
-        <option value=""><style="background-color: #28456C;">Select status...</option> 
-        <option value=""><style="background-color: #28456C;">Validated</option>
-        <option value=""><style="background-color: #6E3630;">Errors Found</option>
-        <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-        <option value=""><style="background-color: #854C1D;">Under Review</option>
-        <option value=""><style="background-color: #5A5A5A;">N/A</option>
-      </select>
-          <br>
-      <label for="Checklist">Side Text:</label>
-      <select name="" id="status">
-        <option value=""><style="background-color: #28456C;">Select status...</option> 
-        <option value=""><style="background-color: #28456C;">Validated</option>
-        <option value=""><style="background-color: #6E3630;">Errors Found</option>
-        <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-        <option value=""><style="background-color: #854C1D;">Under Review</option>
-        <option value=""><style="background-color: #5A5A5A;">N/A</option>
-      </select>
-      <p>
-      <p>
-      <font size="5">Misc</font><br>
-      <label for="Checklist">Title:</label>
-      <select name="" id="status">
-        <option value=""><style="background-color: #28456C;">Select status...</option> 
-        <option value=""><style="background-color: #28456C;">Validated</option>
-        <option value=""><style="background-color: #6E3630;">Errors Found</option>
-        <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-        <option value=""><style="background-color: #854C1D;">Under Review</option>
-        <option value=""><style="background-color: #5A5A5A;">N/A</option>
-      </select>
-          <br>
-      <label for="Checklist">Holo Cut:</label>
-      <select name="" id="status">
-        <option value=""><style="background-color: #28456C;">Select status...</option> 
-        <option value=""><style="background-color: #28456C;">Validated</option>
-        <option value=""><style="background-color: #6E3630;">Errors Found</option>
-        <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-        <option value=""><style="background-color: #854C1D;">Under Review</option>
-        <option value=""><style="background-color: #5A5A5A;">N/A</option>
-      </select>
-          <br>
-      <label for="Checklist">Flavour Text:</label>
-      <select name="" id="status">
-        <option value=""><style="background-color: #28456C;">Select status...</option> 
-        <option value=""><style="background-color: #28456C;">Validated</option>
-        <option value=""><style="background-color: #6E3630;">Errors Found</option>
-        <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-        <option value=""><style="background-color: #854C1D;">Under Review</option>
-        <option value=""><style="background-color: #5A5A5A;">N/A</option>
-      </select>
-          <br>
-      <label for="Checklist">Stellar Numbering:</label>
-      <select name="" id="status">
-        <option value=""><style="background-color: #28456C;">Select status...</option> 
-        <option value=""><style="background-color: #28456C;">Validated</option>
-        <option value=""><style="background-color: #6E3630;">Errors Found</option>
-        <option value=""><style="background-color: #89632A;">Edit In Progress</option>
-    <option value=""><style="background-color: #854C1D;">Under Review</option>
-    <option value=""><style="background-color: #5A5A5A;">N/A</option>
-         </body>
-   </select>
-  </div>
+          <div class="grid grid-cols-2">
+            <label
+              for="name"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Name:</label
+            >
+            <select
+              id="name"
+              name="status"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="frame"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Frame:</label
+            >
+            <select
+              id="frame"
+              name="frame"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="artwork"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Artwork:</label
+            >
+            <select
+              id="artwork"
+              name="artwork"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="cost"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Cost:</label
+            >
+            <select
+              id="cost"
+              name="cost"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="effect-text"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Effect Text:</label
+            >
+            <select
+              id="effect-text"
+              name="effect-text"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="set-stamp"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Set Stamp:</label
+            >
+            <select
+              id="set-stamp"
+              name="set-stamp"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="card-rarity"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Card Rarity:</label
+            >
+            <select
+              id="card-rarity"
+              name="card-rarity"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="subclasses"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Subclasses:</label
+            >
+            <select
+              id="subclasses"
+              name="subclasses"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="artist-attribution"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Artist Attribution:</label
+            >
+            <select
+              id="artist-attribution"
+              name="artist-attribution"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="card-number"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Card Number:</label
+            >
+            <select
+              id="card-number"
+              name="card-number"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="copyright-line"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Copyright Line:</label
+            >
+            <select
+              id="copyright-line"
+              name="copyright-line"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+        </section>
+      </div>
+
+      <div class="flex flex-col gap-5">
+        <section>
+          <p class="text-xl font-bold mb-4">Elestral</p>
+          <div class="grid grid-cols-2">
+            <label
+              for="atk-value"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >ATK Value:</label
+            >
+            <select
+              id="atk-value"
+              name="atk-value"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="def-value"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >DEF Value:</label
+            >
+            <select
+              id="def-value"
+              name="def-value"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+        </section>
+
+        <section>
+          <p class="text-xl font-bold mb-4">Rune</p>
+          <div class="grid grid-cols-2">
+            <label
+              for="rune-icon"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Rune Icon:</label
+            >
+            <select
+              id="rune-icon"
+              name="rune-icon"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="side-text"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Side Text:</label
+            >
+            <select
+              id="side-text"
+              name="side-text"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+        </section>
+
+        <section>
+          <p class="text-xl font-bold mb-4">Misc</p>
+          <div class="grid grid-cols-2">
+            <label
+              for="title"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Title:</label
+            >
+            <select
+              id="title"
+              name="title"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="holo-cut"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Holo Cut:</label
+            >
+            <select
+              id="holo-cut"
+              name="holo-cut"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="flavour-text"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Flavour Text:</label
+            >
+            <select
+              id="flavour-text"
+              name="flavour-text"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <label
+              for="stellar-numbering"
+              class="block text-sm font-medium leading-6 text-gray-900"
+              >Stellar Numbering:</label
+            >
+            <select
+              id="stellar-numbering"
+              name="stellar-numbering"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            >
+              <option value="">Select status...</option>
+              <option value="validated">Validated</option>
+              <option value="errors">Errors Found</option>
+              <option value="in-progress">Edit In Progress</option>
+              <option value="under-review">Under Review</option>
+              <option value="na">N/A</option>
+            </select>
+          </div>
+        </section>
+      </div>
+    </body>
+  </html>
 </body>
