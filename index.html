@@ -1,15 +1,26 @@
-body {
-  width:100%;
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-.column {
-  width:50%;
-}
+<html>
+ <head>
+    <style>
+    {
+        box-sizing: border-box;
+    }
+    .column {
+    float: left;
+    width: 50%;
+    }
 
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+
+<div class="row">
+<div class="column">
 <body>
   <div class="column">
-    <font size="5">Checklist</font><p></p>
+    <font size="8">Checklist</font><p></p>
     <label for="Checklist">Background:</label>
     <select name="" id="status">
       <option value=""><style="background-color: #28456C;">Validated</option>
@@ -118,10 +129,12 @@ body {
       <option value=""><style="background-color: #5A5A5A;">N/A</option>
     </select>
   </div>
-<p>        
+<p> 
+<div class="row">
+<div class="column">        
 <body>
   <div class="column">
-    <font size="3">Elestral</font><br>
+    <font size="5">Elestral</font><br>
     <label for="Checklist">ATK Value:</label>
     <select name="" id="status">
       <option value=""><style="background-color: #28456C;">Validated</option>
@@ -141,7 +154,7 @@ body {
     </select>
     <p>
     <p>
-    <font size="3">Rune</font><br>
+    <font size="5">Rune</font><br>
     <label for="Checklist">Rune Icon:</label>
     <select name="" id="status">
       <option value=""><style="background-color: #28456C;">Validated</option>
@@ -161,7 +174,7 @@ body {
     </select>
     <p>
     <p>
-    <font size="3">Misc</font><br>
+    <font size="5">Misc</font><br>
     <label for="Checklist">Title:</label>
     <select name="" id="status">
       <option value=""><style="background-color: #28456C;">Validated</option>
