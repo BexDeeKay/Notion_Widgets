@@ -2,22 +2,25 @@
   <html>
     <head>
       <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+        .dark {
+          color: white;
+        }
+      </style>
     </head>
     <body class="grid grid-cols-2 gap-10 p-10">
       <div>
         <section>
-          <p class="text-xl font-bold mb-4 dark:text-white">Checklist</p>
+          <p class="text-xl font-bold mb-4">Checklist</p>
 
           <div class="grid grid-cols-2">
-            <label
-              for="status"
-              class="block text-sm font-medium leading-6 dark:text-white dark:text-white"
+            <label for="status" class="block text-sm font-medium leading-6"
               >Background:</label
             >
             <select
               id="status"
               name="status"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -29,15 +32,13 @@
           </div>
 
           <div class="grid grid-cols-2">
-            <label
-              for="name"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="name" class="block text-sm font-medium leading-6"
               >Name:</label
             >
             <select
               id="name"
               name="status"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -49,15 +50,13 @@
           </div>
 
           <div class="grid grid-cols-2">
-            <label
-              for="frame"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="frame" class="block text-sm font-medium leading-6"
               >Frame:</label
             >
             <select
               id="frame"
               name="frame"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -69,15 +68,13 @@
           </div>
 
           <div class="grid grid-cols-2">
-            <label
-              for="artwork"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="artwork" class="block text-sm font-medium leading-6"
               >Artwork:</label
             >
             <select
               id="artwork"
               name="artwork"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -89,15 +86,13 @@
           </div>
 
           <div class="grid grid-cols-2">
-            <label
-              for="cost"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="cost" class="block text-sm font-medium leading-6"
               >Cost:</label
             >
             <select
               id="cost"
               name="cost"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -109,15 +104,13 @@
           </div>
 
           <div class="grid grid-cols-2">
-            <label
-              for="effect-text"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="effect-text" class="block text-sm font-medium leading-6"
               >Effect Text:</label
             >
             <select
               id="effect-text"
               name="effect-text"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -129,15 +122,13 @@
           </div>
 
           <div class="grid grid-cols-2">
-            <label
-              for="set-stamp"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="set-stamp" class="block text-sm font-medium leading-6"
               >Set Stamp:</label
             >
             <select
               id="set-stamp"
               name="set-stamp"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -149,15 +140,13 @@
           </div>
 
           <div class="grid grid-cols-2">
-            <label
-              for="card-rarity"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="card-rarity" class="block text-sm font-medium leading-6"
               >Card Rarity:</label
             >
             <select
               id="card-rarity"
               name="card-rarity"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -169,15 +158,13 @@
           </div>
 
           <div class="grid grid-cols-2">
-            <label
-              for="subclasses"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="subclasses" class="block text-sm font-medium leading-6"
               >Subclasses:</label
             >
             <select
               id="subclasses"
               name="subclasses"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -191,13 +178,13 @@
           <div class="grid grid-cols-2">
             <label
               for="artist-attribution"
-              class="block text-sm font-medium leading-6 dark:text-white"
+              class="block text-sm font-medium leading-6"
               >Artist Attribution:</label
             >
             <select
               id="artist-attribution"
               name="artist-attribution"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -209,15 +196,13 @@
           </div>
 
           <div class="grid grid-cols-2">
-            <label
-              for="card-number"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="card-number" class="block text-sm font-medium leading-6"
               >Card Number:</label
             >
             <select
               id="card-number"
               name="card-number"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -231,13 +216,13 @@
           <div class="grid grid-cols-2">
             <label
               for="copyright-line"
-              class="block text-sm font-medium leading-6 dark:text-white"
+              class="block text-sm font-medium leading-6"
               >Copyright Line:</label
             >
             <select
               id="copyright-line"
               name="copyright-line"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -252,17 +237,15 @@
 
       <div class="flex flex-col gap-5">
         <section>
-          <p class="text-xl font-bold mb-4 dark:text-white">Elestral</p>
+          <p class="text-xl font-bold mb-4">Elestral</p>
           <div class="grid grid-cols-2">
-            <label
-              for="atk-value"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="atk-value" class="block text-sm font-medium leading-6"
               >ATK Value:</label
             >
             <select
               id="atk-value"
               name="atk-value"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -274,15 +257,13 @@
           </div>
 
           <div class="grid grid-cols-2">
-            <label
-              for="def-value"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="def-value" class="block text-sm font-medium leading-6"
               >DEF Value:</label
             >
             <select
               id="def-value"
               name="def-value"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -295,17 +276,15 @@
         </section>
 
         <section>
-          <p class="text-xl font-bold mb-4 dark:text-white">Rune</p>
+          <p class="text-xl font-bold mb-4">Rune</p>
           <div class="grid grid-cols-2">
-            <label
-              for="rune-icon"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="rune-icon" class="block text-sm font-medium leading-6"
               >Rune Icon:</label
             >
             <select
               id="rune-icon"
               name="rune-icon"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -317,15 +296,13 @@
           </div>
 
           <div class="grid grid-cols-2">
-            <label
-              for="side-text"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="side-text" class="block text-sm font-medium leading-6"
               >Side Text:</label
             >
             <select
               id="side-text"
               name="side-text"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -338,17 +315,15 @@
         </section>
 
         <section>
-          <p class="text-xl font-bold mb-4 dark:text-white">Misc</p>
+          <p class="text-xl font-bold mb-4">Misc</p>
           <div class="grid grid-cols-2">
-            <label
-              for="title"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="title" class="block text-sm font-medium leading-6"
               >Title:</label
             >
             <select
               id="title"
               name="title"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -360,15 +335,13 @@
           </div>
 
           <div class="grid grid-cols-2">
-            <label
-              for="holo-cut"
-              class="block text-sm font-medium leading-6 dark:text-white"
+            <label for="holo-cut" class="block text-sm font-medium leading-6"
               >Holo Cut:</label
             >
             <select
               id="holo-cut"
               name="holo-cut"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -382,13 +355,13 @@
           <div class="grid grid-cols-2">
             <label
               for="flavour-text"
-              class="block text-sm font-medium leading-6 dark:text-white"
+              class="block text-sm font-medium leading-6"
               >Flavour Text:</label
             >
             <select
               id="flavour-text"
               name="flavour-text"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
@@ -402,13 +375,13 @@
           <div class="grid grid-cols-2">
             <label
               for="stellar-numbering"
-              class="block text-sm font-medium leading-6 dark:text-white text-gray-900"
+              class="block text-sm font-medium leading-6 text-gray-900"
               >Stellar Numbering:</label
             >
             <select
               id="stellar-numbering"
               name="stellar-numbering"
-              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              class="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6 text-gray-900"
             >
               <option value="">Select status...</option>
               <option value="validated">Validated</option>
